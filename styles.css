@@ -140,4 +140,15 @@ input {
         font-size: 70px;
     }
 }
-/* 
+
+input:invalid {
+    border: 0.5px solid red;
+}
+input:valid {
+    border: 0.5px solid green;
+}
+
+input:hover, input:focus {
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 5px lightgray;
+}
