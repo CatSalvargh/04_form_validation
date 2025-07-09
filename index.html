@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Restaurant <form action=""></form></title>
+</head>
+<body>
+    <div class="large-image">
+        <div class="logo-container">
+            <h1 class="logo-title">A Fancy Restaurant</h1>
+        </div>
+        <img src="menu2.jpg" alt="a menu image">
+    </div>
+    <div class="contact-details">
+        <div class="intro-text">
+            <h2 id=form-title class="medium-title">Sign up</h2>
+            <h4 id=form-subtitle class="subtitle">This is an example of a form to create an account. Part of The Odin's JS Full Stack project's curriculum. It's a cool project, so go ahead and create your account. What for? Not sure, this form doesn't do anything... yet!
+            It's not responsive, either. Yes, you guessed it... it doesn't have to... yet!,
+            </h4>
+        </div>
+        <div class="form-container">
+            <form action="" method="dialog" id="contact-form">
+                <h3 class="form-title">Let's create your account!</h3>
+                <fieldset id="left">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" autocomplete="on">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" autocomplete="on">
+                    <label for="password">Pasword</label>
+                    <input type="password" name="pw" id="pw" autocomplete="on">
+                </fieldset>
+                <fieldset id="right">
+                    <label for="lastname">Lastname</label>
+                    <input type="text" name="lastname" id="lastname" autocomplete="on">
+
+                    <label for="email">Phone number</label>
+                    <input type="number" name="ph" id="ph" autocomplete="on">
+                    
+                    <label for="password">Confirm Pasword</label>
+                    <input type="password" name="pwconf" id="pwconf" autocomplete="on">
+                </fieldset>
+                <div class="submit">
+                <input type="submit" value="Create Account" id="send-btn" class="btn js-add-btn btn--secondary">
+                <p> Already have an account? <a href="">Log in</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

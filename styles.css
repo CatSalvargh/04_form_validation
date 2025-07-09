@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'Quicksand-Bold';
+    font-weight: 800;
+    src: url(fonts/quicksand-bold-webfont.woff) format('woff');
+}
+@font-face {
+    font-family: 'Quicksand-regular';
+    font-weight: 500;
+    src: url(fonts/quicksand-regular-webfont.woff) format('woff');
+}
+
+body {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0;
+    font-family: Quicksand-regular;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.large-image {
+    width: 30%;
+    height: 100vh;
+
+    & img {
+        height: 100%;
+        width: 100%;
+        object-fit:cover;
+    }
+
+    & .logo-container {
+        width: 25%;
+        height: 20%;
+        z-index: 1;
+        position: absolute;
+        top: 36%;
+        left: 0;
+        padding: 0 3rem;
+        backdrop-filter: blur(10px);
+        color: whitesmoke;
+        font-family: Quicksand-Bold;
+        letter-spacing: 3px;
+        font-size: 1.5vw;
+    }
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 6rem 0;
+    gap: 3.5rem;
+    background-color: rgb(237, 236, 236);
+    width: 70%;
+    height: 100vh;
+}
+
+.form-container {
+    display: flex;
+    width: 100%;
+    height: 25%;
+    padding: 1rem 0 2.5rem 0;
+    border: 1px solid lightgray;
+    background-color: white;
+    box-shadow: 
+        0 3px 10px rgb(101, 101, 101),
+        0 15px 15px lightgray;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.5fr 2fr;
+    width: 80%;
+    margin: 0 auto;
+    color: rgb(43, 42, 42);
+    padding: 0 3rem 2rem 3rem;
+}
+
+.form-title {
+    display: block;
+    grid-area: 1 / 1 / span 1 / span 2;
+    font-family: Quicksand-Bold;
+    font-weight: bolder;
+}
+
+fieldset {
+    display:  flex;
+    flex-direction: column;
+    border: none;
+}
+
+label {
+    font-weight: 600;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+
+input {
+    height: 22px;
+    border: 1px solid rgb(140, 140, 140);
+    border-radius: 5px;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.submit {
+    position: absolute;
+    top: 70%;
+    left: 38%;
+}
+
+#send-btn {
+    height: 2.5rem;
+    width: 10vw;
+    padding: 0 1rem;
+    font-weight: bolder;
+    color: whitesmoke;
+    background-color: rgb(92, 142, 74);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px rgb(62, 62, 62);
+}
+
+.intro-text {
+    padding: 0 3rem;
+    justify-self: flex-start;
+    color: rgb(36, 36, 36);
+    line-height: 23px;
+    font-weight: bold;
+
+    & h2 {
+        font-family: Quicksand-Bold;
+        font-weight: bolder;
+    }
+
+    & h2::first-letter {
+        color:rgb(92, 142, 74);
+        font-size: 70px;
+    }
+}
+/* 
